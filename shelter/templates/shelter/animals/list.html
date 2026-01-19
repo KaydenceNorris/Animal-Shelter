@@ -1,0 +1,15 @@
+{% extends "shelter/base.html" %}
+{% block title %}Animal Shelter{% endblock %}
+{% block content %}
+  <h1>Animals Available</h1>
+  {% for animal in animals %}
+    <h2>
+        {{ animal.name}}
+    </h2>
+
+    <div class="info">
+        <p>Age: {{animal.age}} Species: {{animal.species}} Breed: {{animal.breed}} Description: {{animal.desc}}</p>
+    </div>
+    
+  {% endfor %}
+{% endblock %}
