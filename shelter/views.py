@@ -3,7 +3,7 @@ from .models import Animal
 from django import http
 
 # Create your views here.
-def animal_list(request):
+def animal_list(request): # Shows all animals. I followed the book pretty close on the project becuase I didn't feel comfortable going to far out
     animals = Animal.object.all()
     return render(
         request,
