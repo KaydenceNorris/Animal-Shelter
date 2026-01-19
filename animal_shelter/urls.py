@@ -24,5 +24,5 @@ urlpatterns = [
     path('shelter/', include('shelter.urls', namespace='shelter')),
 ]
 
-if settings.DEBUG:
+if settings.DEBUG: # Stuff to make iamges work
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

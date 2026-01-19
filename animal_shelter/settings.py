@@ -118,5 +118,5 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-MEDIA_URL = '/media/'
+MEDIA_URL = '/media/' # stuff to make the images work. This was mostly AI with me trial and erroring on top of it.
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
